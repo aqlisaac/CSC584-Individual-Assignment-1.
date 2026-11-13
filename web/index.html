@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Input Form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Personal Profile Form</h2>
+        <form action="ProfileServlet" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g., Ali Bin Abu" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" placeholder="Student ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="programme">Programme:</label>
+                <input type="text" id="programme" name="programme" placeholder="e.g., CS240" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="e.g., y/n@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="e.g., Coding, Cycling, Gaming...">
+            </div>
+
+            <div class="form-group">
+                <label for="selfIntro">Short Self-Introduction:</label>
+                <textarea id="selfIntro" name="selfIntro" rows="4" placeholder="e.g., Hi!I'm just happy to be here."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Profile</button>
+        </form>
+    </div>
+</body>
+</html>
